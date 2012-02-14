@@ -6,6 +6,7 @@
 		<meta name="description" content="Typography">
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 		<script type="text/javascript" src="parallax.min.js"></script>
+    <script type="text/javascript" src="parallaxSetup.js"></script>
     <script type="text/javascript" src="typography.js"></script>
 		<link rel = StyleSheet href = "typography.css" type = "text/css" media = screen> 	
 	</head>
@@ -13,11 +14,21 @@
 		<section id="main">
 		  <section id="title" class="page">
         <section class="innerPage">
-          <span id="letsDo">Let's Do</span>
+          <span id="bar"></span>
           <span id="typography">Typography</span>
+          <span id="letsDo">Let's Do</span>
         </section>
       </section>
       <section id="gridSize" class="page">
+        <section class="innerPage">
+          <div class="pageHeader">What size grid do you want?</div>
+          <div id="gridWrapper">
+            <canvas id="gridSizeCanvas" width="500" height="500"></canvas>
+            <br>
+            <img src="plus.png">
+            <img src="minus.png">
+          </div>
+        </section>
       </section>
       <section id="options" class="page">
       </section>
@@ -31,6 +42,15 @@
       </section>
       <section id="download" class="page">
       </section>
+            
+      <div id="prevControl" class="control">
+        Prev
+      </div>
+      
+      <div id="nextControl" class="control">
+        Next
+      </div>
+      
 		</section>
 	</body>
 </html>
