@@ -127,6 +127,35 @@ body
   line-height: 75px;
 }
 
+.letterform
+{
+  width: 100px;
+  height: 100px;
+  display: inline-block;
+  
+  margin: 0px auto;
+  
+  border-radius: 5px;
+  border: 1px solid gray;
+  
+  cursor: pointer;
+  
+  /** OPACITY **/
+  zoom: 1;
+  -webkit-transform: translateZ(0);
+	filter: alpha(opacity=50);
+	opacity: 0.5;
+}
+
+.letterform:hover
+{
+  /** OPACITY **/
+  zoom: 1;
+  -webkit-transform: translateZ(0);
+	filter: alpha(opacity=100);
+	opacity: 1.0;
+}
+
 /** title **/
 
 #typography
@@ -174,12 +203,13 @@ body
   border-radius: 5px;
 }
 
-#gridWrapper
+#gridSize .innerPageWrapper
 {
   margin: 50px 0px 0px 150px;
+  width: 500px;
 }
 
-#gridWrapper input
+#gridSize .innerPageWrapper input
 {
   border-radius: 5px;
   width: 32px;
@@ -188,4 +218,27 @@ body
 #gridWrapper span
 {
   font-size: 18px;
+}
+
+#plus
+{
+  float: right;
+}
+
+#minus
+{
+  float: left;
+}
+
+/** importantLettersManual **/
+
+#importantLettersManual .innerPageWrapper
+{
+  padding-left: 50px;
+}
+
+#or
+{
+  text-align: center;
+  font-size: 75px;
 }

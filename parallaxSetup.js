@@ -36,12 +36,16 @@ $(document).ready(function(){
     };
   parallax.gridSize.onload=function(){
     setLeft("title");
-    setRight("options","Options");
+    setRight("importantLettersManual");
+    //setRight("options");
   };
   parallax.options.onload=function(){
+    //setLeft("gridSize");
+    //setLeft("importantLettersAutoGen");
+    //setRight("importantLettersManual");
+  };
+  parallax.importantLettersManual.online=function(){
     setLeft("gridSize");
-    //~ setLeft("importantLettersAutoGen","Let the computer do the work");
-    //~ setRight("importantLettersManual","Do the work yourself");
   };
   
   //Sets the correct triggers for the arrows, plus arrow keys
@@ -64,7 +68,7 @@ $(document).ready(function(){
 	}
 	
   $(".control").hide();
-    parallax.gridSize.show();
+    parallax.importantLettersManual.show();
 });
 
 
